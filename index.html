@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe de Lumiere</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+     <header>
+        <h1>Cafe de Lumiere</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- メインビジュアル -->
+      <section id="hero">
+        <h2>ゆったり過ごす、午後のひととき</h2>
+      </section>
+
+      <!-- カフェ紹介 -->
+       <section id="about">
+        <h3>About</h3>
+        <p>静かな路地に佇む、小さなカフェ。<br>香り高いコーヒーと手作りスイーツをご用意しています。</p>
+       </section>
+
+       <!-- メニュー紹介 -->
+        <section id="menu">
+            <h3>Menu</h3>
+            <div class="menu-categories">
+                <a href="menu/drinks.html">
+                    <div class="category">
+                        <img src="images/drink.jpg" alt="ドリンク">
+                        <h3>ドリンク</h3>
+                    </div>
+                </a>
+                <a href="menu/foods.html">
+                    <div class="category">
+                        <img src="images/food.jpg" alt="フード">
+                        <h3>フード</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- アクセス情報 -->
+        <section id="access">
+            <h3>Access</h3>
+            <p>大阪府大阪市○○区△△10-11-12<br>□□駅から徒歩5分<br>駐車場有り</p>
+            <p>営業時間：11:00～18:00(水曜定休)</p>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7801.69290596588!2d135.49979511149908!3d34.69993840113361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2sOsaka%20Station!5e0!3m2!1sen!2sjp!4v1748845164329!5m2!1sen!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <!-- フォーム -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">send</button>
+            </form>
+        </section>
+
+        <!-- フッター -->
+         <footer>
+            <p>&copy; 2025 Cafe de Lumiere</p>
+         </footer>
+</body>
+</html>
