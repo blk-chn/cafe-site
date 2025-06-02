@@ -1,0 +1,229 @@
+/* フォントと背景全体 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f4e3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ヘッダー */
+header {
+    background-color: #6b4c3b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* メインビジュアル */
+#hero {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.5em;
+}
+
+/* セクション共通 */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* メニューカテゴリの画像リンク */
+.menu-categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu-categories a {
+    text-decoration: none;
+}
+
+.category {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+/* アクセス情報 */
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フォーム */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #6b4c3b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #5a3c2a;
+}
+
+/* フッター */
+footer {
+    background-color: #6b4c3b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* メニュー一覧レイアウト */
+.menu-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #3e3e3e;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.menu-content h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-content p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #6b4c3b;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .menu-section {
+        padding: 20px 10px;
+    }
+    .menu-section h2 {
+        font-size: 1.6em;
+    }
+    .menu-card p {
+        font-size: 0.9em;
+    }
+}
